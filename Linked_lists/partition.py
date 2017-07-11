@@ -25,20 +25,13 @@ def partition(node, x):
     beforeHead=None
     after = None
     afterHead = None
-
     while node:
-
         if node.data < x:
-
             if before:
-
                 before.next = node
-
                 before = before.next
             else:
-
                 before = node
-
                 beforeHead = before
             node = node.next
         else:
