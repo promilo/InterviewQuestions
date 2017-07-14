@@ -55,18 +55,12 @@ def clear_bits_msb_through_i_inclusive(binary, ith):
 def clear_bits_i_through_0_inclusive(binary,ith):
     return binary & ~((1 << (ith + 1)) - 1)
 
-    ''' binary = 101101 ith = 2 bit = 101
-    (1 << 2) = 100
-    ~(000100) = 111011
-      101101
-    & 111011
-    --------
-      101001
-     +000101
-     -------
-      101110
+    ''' To set the ith bit to a value v, we first clear the bit at position i by using a mask that looks like 11101111.
+Then, we shift the intended value, v, left by i bits. This will create a number with bit i equal to v and all
+other bits equal to 0. Finally, we OR these two numbers, updating the ith bit if v is 1 and leaving it as 0
+otherwise.
 
     '''
 
 def update_bit(binary, ith, bit):
-    return (binary & ~(1 << ith)) + (bit << ith)
+    return (binary & ~(1 << ith)) | (bit << ith)
