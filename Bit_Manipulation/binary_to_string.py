@@ -10,14 +10,14 @@ def printBinary(num):
     while num > 0:
         print "num, ", num
         if len(output) > 32: # if the length is greater than 32 return error
-            print "Error"
+            print "went greater than 32"
             return output
         if num >= half:
             output += "1"
             num -= half
         else:
             output += "0"
-        half = half/2
+        half = half/2.0
     return output
 
 
