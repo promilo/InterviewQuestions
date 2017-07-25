@@ -6,7 +6,7 @@ def largeContSum(arr):
     maxSum = arr[0]
     currentSum = arr[0]
     for number in arr[1:]:
-        currentSum = max(currenSum+num, num)
+        currentSum = max(currentSum+number, number)
         maxSum = max(currentSum, maxSum)
     return maxSum
 
