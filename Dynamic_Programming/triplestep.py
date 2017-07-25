@@ -12,6 +12,9 @@ def countWays(n):
     else:
         return countWays(n - 1)  + countWays(n - 2) + countWays(n - 3)
 
+def memoCountWays(n):
+    
+
 
 answer = countWays(5)
 
