@@ -4,7 +4,6 @@ stairs. '''
 
 #Brute Force
 def countWays(n):
-    print "on nth call", n
     if n < 0:
         return 0
     elif n == 0:
