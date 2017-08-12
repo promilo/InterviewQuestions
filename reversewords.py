@@ -13,3 +13,6 @@ class Solution(object):
                 output += x[::-1]
                 output += " "
         return output
+
+
+#hana
