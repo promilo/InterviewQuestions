@@ -5,4 +5,6 @@ Used the following resources
 Cracking the coding Interview
 https://github.com/joeyajames/Python
 
-It will also include to the solutions to hacker rank, leetcode, and 28 questions from ardendetrat. 
+It will also include to the solutions to hacker rank, leetcode, and 28 questions from ardendetrat.
+
+I have also added solutions to the questions that I was asked during my interviews.
